@@ -12,19 +12,22 @@ main.js   import npmAssembly from 'npm-assembly'
 # echarts 组件
 <echart
     :id="Id"
-    :eStyle="style" // 样式
-    :titleText="title" // 标题
-    :legend="barName" // legend
-    :seriesData="data" // 数据源
-    :xA="barX" // X轴
-    :yA="barY" // Y轴
+    :eStyle="style" // 样式 {}
+    :titleText="title" // 标题 ''
+    :legend="barName" // legend {}
+    :seriesData="data" // 数据源 []
+    :xA="barX" // X轴 {}
+    :yA="barY" // Y轴 {}
     />
 
+案例： https://github.com/liyujie-567/npm-test/blob/master/src/components/Echarts.vue
 ```
 
 ``` bash
 # 常用函数持续更新...
 import util from 'npm-assembly/src/lib/util'
+
+案例： https://github.com/liyujie-567/npm-test/blob/master/src/components/util.vue
 
 时间格式化 : util.formatDate(new Date(), 'yyyy年MM月dd hh分mm秒')
 以“天”为单位获取响应的时间戳 : util.setDate(util.setDate(3), 'yyyy年MM月dd hh分mm秒')
