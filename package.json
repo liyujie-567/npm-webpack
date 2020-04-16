@@ -1,7 +1,7 @@
 {
   "name": "npm-assembly",
   "description": "npm assembly 常用插件",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "liyujie <liyujie_jack@163.com>",
   "license": "MIT",
   "private": false,
