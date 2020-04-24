@@ -7,18 +7,18 @@
 npm install npm-assembly --save
 
 # serve
-main.js   import npmAssembly from 'npm-assembly'
+main.js
+import echarts from 'echarts'
+import npmAssembly from 'npm-assembly'
+
+Vue.prototype.$echarts = echarts
+Vue.use(npmAssembly);
 
 # echarts 组件
 <echart
     :id="Id"
-    :eStyle="style" // 样式 {}
-    :titleText="title" // 标题 ''
-    :legend="barName" // legend {}
-    :seriesData="data" // 数据源 []
-    :xA="barX" // X轴 {}
-    :yA="barY" // Y轴 {}
-    />
+    :eStyle="style"
+    :option="Option"/>
 
 案例： https://github.com/liyujie-567/npm-test/blob/master/src/components/Echarts.vue
 ```
