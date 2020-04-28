@@ -36,17 +36,17 @@ export default {
   watch: {
     option: {
       handler(n, o) {
-        // this.$nextTick(() => {
+        this.$nextTick(() => {
           this.drawLine(this.id, n);
-        // })
+        })
       },
       deep: true
     }
   },
   mounted () {
-    this.$nextTick(() => {
+    // this.$nextTick(() => {
       this.drawLine(this.id, this.option)
-    })
+    // })
     window.addEventListener('resize', () => {
       this.charts.resize()
     })
