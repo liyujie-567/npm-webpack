@@ -36,9 +36,9 @@ export default {
   watch: {
     option: {
       handler(n, o) {
-        this.$nextTick(() => {
+        // this.$nextTick(() => {
           this.drawLine(this.id, n);
-        })
+        // })
       },
       deep: true
     }
